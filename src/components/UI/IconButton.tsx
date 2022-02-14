@@ -15,7 +15,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
 }) => {
 
     return (
-        <button onClick={onClick} type={type} className={`flex items-center justify-center ${className}`}>
+        <button onClick={onClick} type={type} className={`flex items-center justify-center hover:opacity-80 transition-opacity ${className}`}>
             {children}
         </button>
     )
