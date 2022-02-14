@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter-regular';
+  src: url('./environment/fonts/Inter-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Inter-medium';
+  src: url('./environment/fonts/Inter-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-semibold';
+  src: url('./environment/fonts/Inter-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+.colored_backgorund {
+  background-image: url("./environment/images/MainBackground.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.phoenix_bank_card {
+  backdrop-filter: blur(21.2658px);
 }
