@@ -1,6 +1,6 @@
 import React from "react";
 import { FeatureCard, StraightFeatureCard } from "../components";
-import { features } from "../constMocks";
+import { features, secondFeatures } from "../constMocks";
 import { IphonesCard } from "../environment";
 
 export const FeaturesBlock: React.FC = () => {
@@ -36,18 +36,13 @@ export const FeaturesBlock: React.FC = () => {
                 <div className="flex flex-col items-center lg:flex-row lg:justify-between">
                     <div>
                         {
-                            features.map((feature, i) => {
-                                if (i < 3) {
-                                    return (
-                                        <StraightFeatureCard
-                                            key={`item${i}`}
-                                            title={feature.title}
-                                            description={feature.description}
-                                        />
-                                    )
-                                }
-                                return
-                            })
+                            secondFeatures.map((feature, i) => (
+                                <StraightFeatureCard
+                                    key={`item${i}`}
+                                    title={feature.title}
+                                    description={feature.description}
+                                />
+                            ))
                         }
                     </div>
                     <div className="hidden md:block">
