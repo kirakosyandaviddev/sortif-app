@@ -42,7 +42,7 @@ export const MainHeader: React.FC = () => {
 
                     <PrimaryButton
                         title="Sign up"
-                        onClick={() => navigate(routes.signIn)}
+                        onClick={() => navigate(routes.signUp)}
                     />
                 </div>
 
