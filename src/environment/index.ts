@@ -1,25 +1,11 @@
-export { BankCardOlivia } from './BankCardOlivia';
-export { BankCardPhoenix } from './BankCardPhoenix';
-export { PlayIcon } from './icons/PlayIcon';
-export { LightningIcon } from './icons/LightningIcon';
-export { DolarIcon } from './icons/DolarIcon';
-export { AnalyticsIcon } from './icons/AnalyticsIcon';
-export { EyeIcon } from './icons/EyeIcon';
-export { ToolsIcon } from './icons/ToolsIcon';
-export { CommentIcon } from './icons/CommentIcon';
-export { IphonesCard } from './IphonesCard';
-export { ArrowRightIcon } from './icons/ArrowRightIcon';
-export { MinusCircleIcon } from './icons/MinusCircleIcon';
-export { PlusCircleIcon } from './icons/PlusCircleIcon';
-export { SignInIcon } from './icons/SignInIcon';
-export { ArrowLeftIcon } from './icons/ArrowLeftIcon';
-export { SettingsIcon } from './icons/SettingsIcon';
-export { HomeIcon } from './icons/HomeIcon';
-export { DownloadCloudIcon } from './icons/DownloadCloudIcon';
-export { ArrowDownIcon } from './icons/ArrowDownIcon';
-export { CheckBoxCheckedIcon } from './icons/CheckBoxCheckedIcon';
-export { CheckBoxBaseIcon } from './icons/CheckBoxBaseIcon';
-export { UploadCloudIcon } from './icons/UploadCloudIcon';
-export { MenuIcon } from './icons/MenuIcon';
-export { SortifLogo } from './icons/SortifLogo';
-export { CloseIcon } from './icons/CloseIcon';
+import { ReactComponent as BankCardOlivia } from './BankCardOlivia.svg';
+import { ReactComponent as BankCardPhoenix } from './BankCardPhoenix.svg';
+import { ReactComponent as IphonesCard } from './IphonesCard.svg';
+
+export {
+    BankCardOlivia,
+    BankCardPhoenix,
+    IphonesCard,
+};
+
+export * from './icons';

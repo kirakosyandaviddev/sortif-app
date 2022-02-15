@@ -11,5 +11,5 @@ export const BankCards: React.FC = () => {
                 <BankCardOlivia />
             </div>
         </div>
-    )
-}
+    );
+};

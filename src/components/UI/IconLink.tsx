@@ -3,20 +3,23 @@ import { NavLink } from "react-router-dom";
 
 interface IconLinkProps {
     to: string;
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>;
     className?: string;
 }
 
 export const IconLink: React.FC<IconLinkProps> = ({
     to,
+    onClick,
     className,
     children,
 }) => {
     return (
         <NavLink
             to={to}
-            className={`hover:opacity-70 transition-opacity ${className}`}
+            className={className}
+            onClick={onClick}
         >
             {children}
         </NavLink>
-    )
-}
+    );
+};

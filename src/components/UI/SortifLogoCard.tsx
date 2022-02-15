@@ -1,5 +1,5 @@
-import React from "react"
-import { SortifLogo } from "../../environment"
+import React from "react";
+import { SortifLogo } from "../../environment";
 
 export const SortifLogoCard: React.FC = () => {
     return (
@@ -9,5 +9,5 @@ export const SortifLogoCard: React.FC = () => {
                 Sortif
             </span>
         </div>
-    )
-}
+    );
+};

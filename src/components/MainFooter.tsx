@@ -8,32 +8,20 @@ export const MainFooter: React.FC = () => {
             <div className="max-w-7xl w-full px-5 pt-16 pb-12">
                 <div className="flex flex-col lg:flex-row justify-between gap-10 pb-16 border-b">
                     <div className="flex flex-col">
-                        <IconLink className="mb-8" to="">
+                        <IconLink className="mb-8 max-w-min" to="" onClick={window.location.reload}>
                             <SortifLogoCard />
                         </IconLink>
                         <div className="flex flex-col sm:flex-row gap-8 font-inter-med text-size_16 text-gray500">
-                            <NavLink
-                                to=""
-                                className="hover:opacity-70 transition-opacity"
-                            >
+                            <NavLink to="">
                                 Overview
                             </NavLink>
-                            <NavLink
-                                to=""
-                                className="hover:opacity-70 transition-opacity"
-                            >
+                            <NavLink to="">
                                 Features
                             </NavLink>
-                            <NavLink
-                                to=""
-                                className="hover:opacity-70 transition-opacity"
-                            >
+                            <NavLink to="">
                                 Pricing (Coming soon)
                             </NavLink>
-                            <NavLink
-                                to=""
-                                className="hover:opacity-70 transition-opacity"
-                            >
+                            <NavLink to="">
                                 Privacy
                             </NavLink>
                         </div>
@@ -63,22 +51,13 @@ export const MainFooter: React.FC = () => {
                         © 2022 Sortif. All rights reserved.
                     </div>
                     <div className="flex gap-4 font-inter-reg text-size_16 text-gray400">
-                        <NavLink
-                            to=""
-                            className="hover:opacity-70 transition-opacity"
-                        >
+                        <NavLink to="">
                             Terms
                         </NavLink>
-                        <NavLink
-                            to=""
-                            className="hover:opacity-70 transition-opacity"
-                        >
+                        <NavLink to="">
                             Privacy
                         </NavLink>
-                        <NavLink
-                            to=""
-                            className="hover:opacity-70 transition-opacity"
-                        >
+                        <NavLink to="">
                             Cookies
                         </NavLink>
                     </div>

@@ -11,4 +11,4 @@ export const AvatarIcon: React.FC<AvatarIconProps> = ({
     size,
 }) => (
     <img src={src} alt="Avatar" width={size} height={size} className={className} />
-)
+);

@@ -7,6 +7,7 @@ interface PrimaryButtonProps {
     onClick?: () => void;
     icon?: React.ReactElement;
     type?: "button" | "submit" | "reset";
+    disabled?: boolean;
 }
 
 export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
@@ -15,19 +16,19 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
     bgInherit = false,
     onClick,
     icon,
-    type
+    type,
+    disabled = false,
 }) => {
     return (
         <button
             onClick={onClick}
             type={type}
-            className={`flex items-center gap-3 font-inter-med text-size_16 rounded-lg transition-all 
+            disabled={disabled}
+            className={`flex justify-center items-center gap-3 font-inter-med text-size_16 rounded-lg transition-all ${disabled && 'bg-gray700'}
                         ${bgInherit ? 'text-gray500' : 'bg-gray900 text-white hover:bg-gray700'} ${className ? className : 'py-2.5 px-5'}`}
         >
-            {icon &&
-                icon
-            }
+            { icon && icon }
             {title}
         </button>
-    )
-}
+    );
+};
