@@ -60,10 +60,10 @@ export const EmailVerification: React.FC = () => {
                             Click to resend
                         </NavLink>
                     </div>
-                    <NavLink to={routes.signIn} className="text-size_14 font-inter-med text-gray500">
-                        <IconButton className="flex items-center gap-2">
+                    <NavLink to={routes.signIn} >
+                        <IconButton className="flex items-center gap-2 w-40">
                             <ArrowLeftIcon />
-                            <span>Back to log in</span>
+                            <div className="text-size_14 font-inter-med text-gray500">Back to log in</div>
                         </IconButton>
                     </NavLink>
                 </div>

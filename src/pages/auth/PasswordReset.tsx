@@ -28,7 +28,7 @@ export const PasswordReset: React.FC = () => {
                         onClick={() => navigate(routes.signIn)}
                     />
                     <NavLink to={routes.signIn} className="text-size_14 font-inter-med text-gray500">
-                        <IconButton className="flex items-center gap-2">
+                        <IconButton className="flex items-center gap-2 w-40">
                             <ArrowLeftIcon />
                             <span>Back to log in</span>
                         </IconButton>
