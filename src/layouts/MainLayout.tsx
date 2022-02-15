@@ -8,7 +8,7 @@ export const MainLayout: React.FC = ({ children }) => {
                 <MainHeader />
                 {children}
             </div>
-                <MainFooter />
+            <MainFooter />
         </div>
     )
 }
