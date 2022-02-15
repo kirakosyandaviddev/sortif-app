@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         white: '#ffffff',
         black: '#000000',
+        gray100: '#F2F4F7',
         gray200: '#E4E7EC',
         gray500: '#667085',
         gray400: '#98A2B3',
@@ -17,10 +18,12 @@ module.exports = {
         green2: '#56D963',
         green3: '#12B76A',
         green4: '#027A48',
+        green5: '#EBFFF1',
         lightGreen: '#ECFDF3',
         purple600: '#7F56D9',
         purple700: '#6941C6',
         lightPurple: '#F9F5FF',
+        red: '#FF0000'
       },
       fontFamily: {
         'inter-reg': ['Inter-regular'],
@@ -36,6 +39,7 @@ module.exports = {
         size_24: ['24px', '32px'],
         size_30: ['30px', '38px'],
         size_36: ['36px', '44px'],
+        size_48: ['48px', '60px'],
         size_50: ['50px', '65px'],
         size_72: ['72px', '90px'],
       },

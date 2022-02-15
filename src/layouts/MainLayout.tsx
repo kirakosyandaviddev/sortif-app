@@ -10,5 +10,5 @@ export const MainLayout: React.FC = ({ children }) => {
             </div>
             <MainFooter />
         </div>
-    )
-}
+    );
+};
