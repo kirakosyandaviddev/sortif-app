@@ -7,10 +7,13 @@ import {
 import { Main } from "../pages";
 
 export const Router: React.FC = () => {
+    const routes = {
+        root: '/'
+    }
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Main />} />
+                <Route path={routes.root} element={<Main />} />
             </Routes>
         </BrowserRouter>
     )

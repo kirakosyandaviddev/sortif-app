@@ -6,8 +6,8 @@ import { ContactBlock, FeaturesBlock, QuestionsBlock, StartBlock } from "../main
 export const Main: React.FC = () => {
     return (
         <MainLayout>
-                <StartBlock />
-            <div className="px-5 ">
+            <StartBlock />
+            <div className="px-5">
                 <FeaturesBlock />
                 <QuestionsBlock />
                 <ContactBlock />
