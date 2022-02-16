@@ -24,8 +24,12 @@ import { ReactComponent as UploadCloudIcon } from './UploadCloudIcon.svg';
 import { ReactComponent as SortifLogoMD } from './SortifLogoMD.svg';
 import { ReactComponent as SortifWhiteLogo } from './SortifWhiteLogo.svg';
 import { ReactComponent as ConectionOnIcon } from './ConectionOnIcon.svg';
-import { ReactComponent as MenuWhiteIcon } from './MenuWhiteIcon.svg'
-import { ReactComponent as CloseWhiteIcon } from './CloseWhiteIcon.svg'
+import { ReactComponent as MenuWhiteIcon } from './MenuWhiteIcon.svg';
+import { ReactComponent as CloseWhiteIcon } from './CloseWhiteIcon.svg';
+import { ReactComponent as ChevronRight } from './ChevronRight.svg';
+import { ReactComponent as SearchIcon } from './SearchIcon.svg';
+import { ReactComponent as ArrowRightIconGray } from './ArrowRightIconGray.svg';
+
 
 export {
     AnalyticsIcon,
@@ -56,4 +60,7 @@ export {
     ConectionOnIcon,
     MenuWhiteIcon,
     CloseWhiteIcon,
+    ChevronRight,
+    SearchIcon,
+    ArrowRightIconGray,
 }

@@ -7,3 +7,7 @@ export { StraightFeatureCard } from './StraightFeatureCard';
 export { QuestionCard } from './QuestionCard';
 export { VerificationInputs } from './VerificationInputs';
 export { AppHeader } from './AppHeader';
+export { ChartDatePickerCard } from './ChartDatePickerCard';
+export { LatestContactsBar } from './LatestContactsBar';
+export { InvoiceFilterBar } from './InvoiceFilterBar';
+export { InvoiceTable } from './InvoiceTable';

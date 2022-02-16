@@ -11,15 +11,15 @@ export const AppHeader: React.FC = () => {
     return (
         <header className="fixed top-0 flex justify-center w-full bg-gray900 z-20">
             <div className="hidden md:flex justify-between items-center gap-5 py-2.5 md:py-4 max-w-7xl w-full px-5">
-                <div className="hidden md:flex justify-between max-w-lg w-full gap-5 items-center py-0.5">
-                    <IconLink to={routes.userHome} onClick={window.location.reload}>
+                <div className="hidden md:flex justify-between max-w-md w-full gap-5 items-center py-0.5">
+                    <IconLink to={routes.home} onClick={window.location.reload}>
                         <SortifWhiteLogoCard />
                     </IconLink>
                     <div className="flex gap-7 text-gray100 font-inter-med text-size_16">
                         <NavLink to="">
                             Dashboard
                         </NavLink>
-                        <NavLink to="">
+                        <NavLink to={routes.invoice}>
                             Invoices
                         </NavLink>
                         <NavLink to="">
@@ -28,20 +28,19 @@ export const AppHeader: React.FC = () => {
                     </div>
                 </div>
                 <div className="hidden md:flex gap-4">
-                    <IconButton>
+                    <IconLink to={routes.signIn} className="w-10 h-10">
                         <SettingsIcon />
-                    </IconButton>
-                    <IconButton>
+                    </IconLink>
+                    <IconLink to={routes.home}>
                         <AvatarIcon src="/assets/Avatar1.png" size={40} />
-                    </IconButton>
-
+                    </IconLink>
                 </div>
             </div>
 
             {/* for Mobile */}
             <div className="block md:hidden flex justify-between w-full p-2.5">
                 <div className="w-full items-center">
-                    <IconLink to={routes.userHome} onClick={window.location.reload}>
+                    <IconLink to={routes.home} onClick={window.location.reload}>
                         <SortifWhiteLogoCard />
                     </IconLink>
                 </div>
@@ -57,7 +56,6 @@ export const AppHeader: React.FC = () => {
                     }
                 </IconButton>
             </div>
-
 
             {/* for Mobile */}
             {

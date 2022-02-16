@@ -1,5 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { AvatarIcon, PrimaryButton } from "../components";
+import { routes } from "../consts";
 
 export const ContactBlock: React.FC = () => {
     return (
@@ -15,10 +17,11 @@ export const ContactBlock: React.FC = () => {
             <span className="w-full text-center text-size_18 font-inter-reg text-inter-reg text-gray500 mb-8">
                 Can’t find the answer you’re looking for? Please chat to our friendly team.
             </span>
-            <PrimaryButton 
-                title="Get in touch"
-
-            />
+            <NavLink to={routes.root}>
+                <PrimaryButton
+                    title="Get in touch"
+                />
+            </NavLink>
         </div>
     );
 };

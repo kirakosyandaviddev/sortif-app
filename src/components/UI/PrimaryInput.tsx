@@ -6,6 +6,7 @@ interface PrimaryInputProps {
     placeholder?: string;
     value?: string;
     type?: React.HTMLInputTypeAttribute,
+    icon?: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string | undefined }> | undefined;
     disabled?: boolean;
     error?: string;
     className?: string;
@@ -25,6 +26,7 @@ export const PrimaryInput: React.FC<PrimaryInputProps> = ({
     value,
     type = 'text',
     disabled,
+    icon,
     className,
     inputClassName,
     onChange,
@@ -36,8 +38,16 @@ export const PrimaryInput: React.FC<PrimaryInputProps> = ({
         onBlur(e);
     };
 
+    const Icon = icon as React.FunctionComponent<React.SVGProps<SVGSVGElement>> | undefined;
+
     return (
-        <label className={`flex flex-col max-w-lg w-full  ${className}`} >
+        <label className={`flex flex-col max-w-xl w-full relative ${className}`} >
+            {
+                Icon &&
+                <div className={`left-3.5 ${label ? 'top-9 mt-0.5' : 'top-3'} absolute`}>
+                    <Icon />
+                </div>
+            }
             {
                 label &&
                 <span className="text-size_14 font-inter-med text-gray700 mb-1.5">
@@ -52,9 +62,11 @@ export const PrimaryInput: React.FC<PrimaryInputProps> = ({
                 value={value}
                 onChange={onChange}
                 onBlur={handleBlur}
-                className={`text-size_16 font-inter-reg border border-lightGray py-2.5 px-3.5 rounded-lg outline-none 
-                focus:bg-gray200 transition-colors ${inputClassName}`}
-            />
+                className={`text-size_16 font-inter-reg border border-lightGray py-2.5 rounded-lg 
+                transition-colors ${Icon ? 'pl-10 pr-3.5' : 'px-3.5'} ${inputClassName}`}
+            >
+                
+                </input>
             {
                 error &&
                 <div className="text-size_14 font-inter-reg text-gray500 mt-1.5">

@@ -1,6 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import { BankCards, PrimaryButton } from "../components";
+import { routes } from "../consts";
 import { PlayIcon } from "../environment";
 
 export const StartBlock: React.FC = () => {
@@ -15,17 +17,21 @@ export const StartBlock: React.FC = () => {
                     Simple, transparent secure invoice sorting. No hidden fees and free overdrafts.
                 </span>
                 <div className="flex gap-3 mb-11">
-                    <PrimaryButton
-                        title="Demo"
-                        bgInherit
-                        className="bg-white text-gray700 py-4 px-8 hover:opacity-70 "
-                        icon={<PlayIcon />}
-                    />
-                    <PrimaryButton
-                        title="Sign up"
-                        className="bg-green text-black py-4 px-8 hover:opacity-70"
-                        bgInherit
-                    />
+                    <NavLink to={routes.root}>
+                        <PrimaryButton
+                            title="Demo"
+                            bgInherit
+                            className="bg-white text-gray700 py-4 px-8 hover:opacity-70 "
+                            icon={<PlayIcon />}
+                        />
+                    </NavLink>
+                    <NavLink to={routes.signUp}>
+                        <PrimaryButton
+                            title="Sign up"
+                            className="bg-green text-black py-4 px-8 hover:opacity-70"
+                            bgInherit
+                        />
+                    </NavLink>
                 </div>
                 <BankCards />
             </div>

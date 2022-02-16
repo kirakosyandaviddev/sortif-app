@@ -33,17 +33,18 @@ export const MainHeader: React.FC = () => {
                 </div>
 
                 <div className="hidden md:flex gap-2 md:py-0.5">
-                    <PrimaryButton
-                        title="Log in"
-                        onClick={() => navigate(routes.signIn)}
-                        bgInherit
-                        className="hover:bg-gray200 py-2.5 px-5"
-                    />
-
-                    <PrimaryButton
-                        title="Sign up"
-                        onClick={() => navigate(routes.signUp)}
-                    />
+                    <NavLink to={routes.signIn}>
+                        <PrimaryButton
+                            title="Log in"
+                            bgInherit
+                            className="hover:bg-gray200 py-2.5 px-5"
+                        />
+                    </NavLink>
+                    <NavLink to={routes.signUp}>
+                        <PrimaryButton
+                            title="Sign up"
+                        />
+                    </NavLink>
                 </div>
 
                 {/* for Mobile */}
@@ -86,16 +87,18 @@ export const MainHeader: React.FC = () => {
                                 Support
                             </NavLink>
                             <div className="pt-5 border-t w-full flex justify-center items-center gap-5">
-                                <PrimaryButton
-                                    title="Log in"
-                                    onClick={() => navigate(routes.signIn)}
-                                    bgInherit
-                                    className="hover:bg-gray200 py-2.5 px-6"
-                                />
-                                 <PrimaryButton
-                                    title="Sign up"
-                                    onClick={() => navigate(routes.signUp)}
-                                />
+                                <NavLink to={routes.signIn}>
+                                    <PrimaryButton
+                                        title="Log in"
+                                        bgInherit
+                                        className="hover:bg-gray200 py-2.5 px-6"
+                                    />
+                                </NavLink>
+                                <NavLink to={routes.signUp}>
+                                    <PrimaryButton
+                                        title="Sign up"
+                                    />
+                                </NavLink>
                             </div>
                         </div>
                     </div>

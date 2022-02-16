@@ -11,14 +11,15 @@ import {
     SignUp,
     EmailVerification,
     MailBoxConnection,
-    UserHome,
+    Home,
+    Invoice,
 } from "../pages";
 
 export const Router: React.FC = () => {
 
     const routes = {
         root: '/',
-        signIn: '/sing-in',
+        signIn: '/sign-in',
         forgotPassword: '/forgot-password',
         checkEmail: '/check-email/:email',
         newPassword: '/new-password',
@@ -28,7 +29,8 @@ export const Router: React.FC = () => {
         emailVerification: '/email-verification/:email',
         mailBoxConection: '/mailbox-conection',
 
-        userHome: '/home',
+        home: '/home',
+        invoice: '/invoice'
     }
 
     return (
@@ -45,7 +47,8 @@ export const Router: React.FC = () => {
                 <Route path={routes.emailVerification} element={<EmailVerification />} />
                 <Route path={routes.mailBoxConection} element={<MailBoxConnection />} />
 
-                <Route path={routes.userHome} element={<UserHome />} />
+                <Route path={routes.home} element={<Home />} />
+                <Route path={routes.invoice} element={<Invoice />} />
             </Routes>
         </BrowserRouter>
     );

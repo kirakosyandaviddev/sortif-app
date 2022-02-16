@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 import { IconButton, PrimaryButton } from "../../components";
 import { ArrowLeftIcon, SortifLogoMD } from "../../environment";
@@ -7,7 +7,6 @@ import { routes } from "../../consts";
 
 export const CheckEmail: React.FC = () => {
     const { email } = useParams();
-    const navigate = useNavigate();
 
     return (
         <div className="flex justify-center items-center min-h-screen w-full">
@@ -26,7 +25,6 @@ export const CheckEmail: React.FC = () => {
                         type="button"
                         title="Open email app"
                         className="w-full py-2.5 px-5 mb-8"
-                        onClick={() => navigate(routes.newPassword)}
                     />
                     <div className="flex justify-center gap-2 mb-8 w-full">
                         <span className="text-size_14 font-inter-reg text-gray500">Didn’t receive the email?</span>

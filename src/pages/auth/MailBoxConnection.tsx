@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
@@ -21,11 +21,11 @@ interface MailBoxConnectionFormValues {
 export const MailBoxConnection: React.FC = () => {
     const navigate = useNavigate();
 
-    const [value, setValue] = useState([0, 75]);
+    const [minDistance, setMinDistance] = useState(1);
+    const [value, setValue] = useState<number[]>([0, minDistance]);
 
 
     const onSliderChange = (event: any, newValue: any, activeThumb: any) => {
-        const minDistance = 1;
         if (!Array.isArray(newValue)) {
             return;
         }
@@ -36,6 +36,20 @@ export const MailBoxConnection: React.FC = () => {
             setValue([value[0], Math.max(newValue[1], value[0] + minDistance)]);
         }
     };
+
+    const changeSliderValue = () => {
+        setMinDistance(minDistance + 1)
+        setValue([0, minDistance])
+    }
+
+    useEffect(() => {
+        if (minDistance < 101) {
+            setTimeout(() => {
+                changeSliderValue()
+            }, 50)
+        }
+        // eslint-disable-next-line
+    }, [minDistance])
 
     const mailBoxConnectionFormSchema = yup.object().shape({
         email: yup.string().email('Email is not valid').required('Email is required'),
@@ -57,8 +71,7 @@ export const MailBoxConnection: React.FC = () => {
         },
         validationSchema: mailBoxConnectionFormSchema,
         onSubmit: (formValues: MailBoxConnectionFormValues) => {
-            console.log('submit')
-            navigate(routes.userHome)
+            navigate(routes.home)
         },
     });
 
@@ -85,10 +98,10 @@ export const MailBoxConnection: React.FC = () => {
                         getAriaLabel={() => 'Minimum distance'}
                         value={value}
                         onChange={onSliderChange}
-                        valueLabelDisplay="auto"
+                        valueLabelDisplay="on"
                         disableSwap
                         valueLabelFormat={(value) => `${value} %`}
-
+                        disabled
                     />
                 </div>
                 <div className="mb-6">
