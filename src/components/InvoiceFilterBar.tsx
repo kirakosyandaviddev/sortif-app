@@ -15,7 +15,7 @@ export const InvoiceFilterBar: React.FC = () => {
 
     return (
         <div className="flex justify-center xl:justify-start items-center w-full gap-3">
-            <div className="xl:min-w-lg xl:w-full">
+            <div className="xl:min-w-lg w-full">
                 <PrimaryInput
                     name="searchInput"
                     label="Search for Contact Name"

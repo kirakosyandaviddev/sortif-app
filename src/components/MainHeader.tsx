@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { PrimaryButton, SortifLogoCard, IconLink, IconButton } from ".";
 import { routes } from "../consts";
 import { CloseIcon, MenuIcon } from "../environment";
 
 export const MainHeader: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const navigate = useNavigate();
 
     return (
         <header className="fixed top-0 flex justify-center w-full bg-white z-20">

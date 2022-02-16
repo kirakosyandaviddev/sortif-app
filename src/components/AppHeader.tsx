@@ -28,7 +28,7 @@ export const AppHeader: React.FC = () => {
                     </div>
                 </div>
                 <div className="hidden md:flex gap-4">
-                    <IconLink to={routes.signIn} className="w-10 h-10">
+                    <IconLink to={routes.root} className="w-10 h-10">
                         <SettingsIcon />
                     </IconLink>
                     <IconLink to={routes.home}>
@@ -39,7 +39,7 @@ export const AppHeader: React.FC = () => {
 
             {/* for Mobile */}
             <div className="block md:hidden flex justify-between w-full p-2.5">
-                <div className="w-full items-center">
+                <div className="items-center">
                     <IconLink to={routes.home} onClick={window.location.reload}>
                         <SortifWhiteLogoCard />
                     </IconLink>
@@ -65,19 +65,19 @@ export const AppHeader: React.FC = () => {
                         <NavLink to="">
                             Dashboard
                         </NavLink>
-                        <NavLink to="">
+                        <NavLink to={routes.invoice}>
                             Invoices
                         </NavLink>
                         <NavLink to="">
                             Contacts
                         </NavLink>
                         <div className="flex gap-4">
-                            <IconButton>
+                            <IconLink to={routes.root} className="w-10 h-10">
                                 <SettingsIcon />
-                            </IconButton>
-                            <IconButton>
+                            </IconLink>
+                            <IconLink to={routes.home}>
                                 <AvatarIcon src="/assets/Avatar1.png" size={40} />
-                            </IconButton>
+                            </IconLink>
                         </div>
                     </div>
                 </div>

@@ -31,8 +31,8 @@ export const Invoice: React.FC = () => {
                         </Typography>
                     </Breadcrumbs>
                 </div>
-                <div className="flex justify-between items-center w-full pb-7 border-b border-gray200 mb-8">
-                    <span className="text-size_30 font-inter-med text-gray900">Invoices</span>
+                <div className="flex flex-col sm:flex-row justify-between gap-2 sm:items-center w-full pb-7 border-b border-gray200 mb-8">
+                    <span className="text-size_24 sm:text-size_30 font-inter-med text-gray900">Invoices</span>
                     <div>
                         <PrimaryButton
                             type="button"
