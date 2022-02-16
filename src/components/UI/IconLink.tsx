@@ -16,7 +16,7 @@ export const IconLink: React.FC<IconLinkProps> = ({
     return (
         <NavLink
             to={to}
-            className={className}
+            className={`flex items-center justify-center ${className}`}
             onClick={onClick}
         >
             {children}

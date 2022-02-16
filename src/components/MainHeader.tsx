@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { PrimaryButton, SortifLogoCard, IconLink, IconButton } from ".";
 import { routes } from "../consts";
 import { CloseIcon, MenuIcon } from "../environment";
 
 export const MainHeader: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const navigate = useNavigate();
 
     return (
         <header className="fixed top-0 flex justify-center w-full bg-white z-20">
@@ -33,17 +32,18 @@ export const MainHeader: React.FC = () => {
                 </div>
 
                 <div className="hidden md:flex gap-2 md:py-0.5">
-                    <PrimaryButton
-                        title="Log in"
-                        onClick={() => navigate(routes.signIn)}
-                        bgInherit
-                        className="hover:bg-gray200 py-2.5 px-5"
-                    />
-
-                    <PrimaryButton
-                        title="Sign up"
-                        onClick={() => navigate(routes.signUp)}
-                    />
+                    <NavLink to={routes.signIn}>
+                        <PrimaryButton
+                            title="Log in"
+                            bgInherit
+                            className="hover:bg-gray200 py-2.5 px-5"
+                        />
+                    </NavLink>
+                    <NavLink to={routes.signUp}>
+                        <PrimaryButton
+                            title="Sign up"
+                        />
+                    </NavLink>
                 </div>
 
                 {/* for Mobile */}
@@ -86,16 +86,18 @@ export const MainHeader: React.FC = () => {
                                 Support
                             </NavLink>
                             <div className="pt-5 border-t w-full flex justify-center items-center gap-5">
-                                <PrimaryButton
-                                    title="Log in"
-                                    onClick={() => navigate(routes.signIn)}
-                                    bgInherit
-                                    className="hover:bg-gray200 py-2.5 px-6"
-                                />
-                                 <PrimaryButton
-                                    title="Sign up"
-                                    onClick={() => navigate(routes.signUp)}
-                                />
+                                <NavLink to={routes.signIn}>
+                                    <PrimaryButton
+                                        title="Log in"
+                                        bgInherit
+                                        className="hover:bg-gray200 py-2.5 px-6"
+                                    />
+                                </NavLink>
+                                <NavLink to={routes.signUp}>
+                                    <PrimaryButton
+                                        title="Sign up"
+                                    />
+                                </NavLink>
                             </div>
                         </div>
                     </div>

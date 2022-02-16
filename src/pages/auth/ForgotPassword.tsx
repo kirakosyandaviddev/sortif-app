@@ -25,7 +25,6 @@ export const ForgotPassword: React.FC = () => {
         },
         validationSchema: forgotPasswordFormSchema,
         onSubmit: (formValues: ForgotPasswordFormValues) => {
-            console.log('submit')
             navigate(routes.checkEmail(formValues.email))
         },
     });

@@ -1,6 +1,6 @@
 export const routes = {
     root: '/',
-    signIn: '/sing-in',
+    signIn: '/sign-in',
     forgotPassword: '/forgot-password',
     checkEmail: (email: string) => `/check-email/${email}`,
     newPassword: '/new-password',
@@ -10,5 +10,6 @@ export const routes = {
     emailVerification: (email: string) => `/email-verification/${email}`,
     mailBoxConection: '/mailbox-conection',
 
-    userHome: '/home',
+    home: '/home',
+    invoice: '/invoice',
 }
