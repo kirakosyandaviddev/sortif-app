@@ -64,7 +64,6 @@ export const MainHeader: React.FC = () => {
                             <CloseIcon />
                             :
                             <MenuIcon />
-
                     }
                 </IconButton>
 

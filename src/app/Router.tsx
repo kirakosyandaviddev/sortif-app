@@ -12,7 +12,9 @@ import {
     EmailVerification,
     MailBoxConnection,
     Home,
-    Invoice,
+    Invoices,
+    Contacts,
+    Settings
 } from "../pages";
 
 export const Router: React.FC = () => {
@@ -30,7 +32,10 @@ export const Router: React.FC = () => {
         mailBoxConection: '/mailbox-conection',
 
         home: '/home',
-        invoice: '/invoice'
+        invoices: '/invoices',
+        contacts: '/contacts',
+        settings: '/settings',
+
     }
 
     return (
@@ -48,7 +53,9 @@ export const Router: React.FC = () => {
                 <Route path={routes.mailBoxConection} element={<MailBoxConnection />} />
 
                 <Route path={routes.home} element={<Home />} />
-                <Route path={routes.invoice} element={<Invoice />} />
+                <Route path={routes.invoices} element={<Invoices />} />
+                <Route path={routes.contacts} element={<Contacts />} />
+                <Route path={routes.settings} element={<Settings />} />
             </Routes>
         </BrowserRouter>
     );

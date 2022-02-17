@@ -13,7 +13,7 @@ interface LatestContactsBarProps {
 export const LatestContactsBar: React.FC<LatestContactsBarProps> = ({
     data,
     initialCount,
-    viewAll = false
+    viewAll = false,
 }) => {
     const changedData = viewAll ? data : data.slice(0, initialCount)
     return (

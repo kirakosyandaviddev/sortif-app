@@ -1,2 +1,4 @@
 export { Home } from './Home';
-export { Invoice } from './Invoice';
+export { Invoices } from './Invoices';
+export { Contacts } from './Contacts';
+export { Settings } from './Settings';

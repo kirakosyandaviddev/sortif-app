@@ -1,4 +1,5 @@
 import { AnalyticsIcon, CommentIcon, DolarIcon, EyeIcon, LightningIcon, ToolsIcon } from "./environment";
+import { Company } from "./types/Company";
 import { Invoice } from "./types/Invoice";
 import { LatestContacts } from "./types/LatestContacts";
 
@@ -1129,5 +1130,74 @@ export const InvoicesData: Invoice[] = [
             avatar: '/assets/Avatar1.png',
         },
         totalCost: 4.99,
+    },
+]
+
+export const CompaniesData: Company[] = [
+    {
+        company: {
+            name: "Catalog",
+            url: "catalogapp.io",
+            avatar: "/assets/CompanyAvatar1.png",
+            employment: "Content curating app",
+            description: "Brings all your news into one place",
+        },
+        status: "Contact",
+        relatedInvoices: 183,
+    },
+    {
+        company: {
+            name: "Circooles",
+            url: "getcirooles.com",
+            avatar: "/assets/CompanyAvatar2.png",
+            employment: "Design software",
+            description: "Super lightweight design app",
+        },
+        status: "Contact",
+        relatedInvoices: 183,
+    },
+    {
+        company: {
+            name: "Command+R",
+            url: "cmdr.ai",
+            avatar: "/assets/CompanyAvatar3.png",
+            employment: "Data prediction",
+            description: "AI and machine learning data",
+        },
+        status: "Contact",
+        relatedInvoices: 183,
+    },
+    {
+        company: {
+            name: "Hourglass",
+            url: "hourglass.app",
+            avatar: "/assets/CompanyAvatar4.png",
+            employment: "Productivity app",
+            description: "Time management and productivity",
+        },
+        status: "Contact",
+        relatedInvoices: 183,
+    },
+    {
+        company: {
+            name: "Layers",
+            url: "getlayers.io",
+            avatar: "/assets/CompanyAvatar5.png",
+            employment: "Web app integrations",
+            description: "Connect web apps seamlessly",
+        },
+        status: "Contact",
+        relatedInvoices: 183,
+    },
+    {
+        company: {
+            name: "Quotient",
+            url: "quotient.co",
+            avatar: "/assets/CompanyAvatar6.png",
+            employment: "Sales CRM",
+            description: "Web-based sales doc management",
+        },
+        status: "Contact",
+        relatedInvoices: 183,
     },
 ]

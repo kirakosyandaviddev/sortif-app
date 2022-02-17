@@ -7,7 +7,7 @@ import { FormControl, MenuItem, Select, TextField } from "@mui/material";
 import { PrimaryInput } from ".";
 import { SearchIcon } from "../environment";
 
-export const InvoiceFilterBar: React.FC = () => {
+export const CompanyFilterBar: React.FC = () => {
 
     const [searchValue, setSearchValue] = useState<string>('');
     const [costValue, setCostValue] = useState<string>('');
@@ -30,7 +30,7 @@ export const InvoiceFilterBar: React.FC = () => {
             </div>
             <div className="hidden xl:flex flex-col gap-1">
                 <span className="text-size_14 font-inter-med text-gray700">
-                    Cost
+                Invoice amount
                 </span>
                 <FormControl sx={{ width: '192px' }}>
                     <Select
@@ -64,7 +64,7 @@ export const InvoiceFilterBar: React.FC = () => {
             </div>
             <div className="hidden xl:flex flex-col gap-1.5">
                 <span className="text-size_14 font-inter-med text-gray700 ">
-                    Customer
+                Contacts
                 </span>
                 <div>
                     <FormControl sx={{ width: '192px' }}>

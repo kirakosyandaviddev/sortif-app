@@ -74,9 +74,11 @@ export const SignIn: React.FC = () => {
                             inputClassName="w-full"
                             className="mb-6"
                         />
+
                         <div className="flex justify-between gap-2 mb-6 w-full">
-                            <label className="flex gap-1.5 items-center sign-in-checkbox cursor-pointer hover:opacity-90 transition-opacity">
-                                <input type="checkbox" className="cursor-pointer"/>
+                            <label className="flex gap-1.5 items-end cursor-pointer hover:opacity-90 transition-opacity auth_checkbox">
+                                <input type="checkbox" />
+                                <span />
                                 <span className="text-size_14 font-inter-med text-gray700">Remember for 30 days</span>
                             </label>
                             <NavLink to={routes.forgotPassword} className="text-size_14 font-inter-med text-purple700">

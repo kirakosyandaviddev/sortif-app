@@ -6,3 +6,4 @@ export { IconButton } from './IconButton';
 export { AvatarIcon } from './AvatarIcon';
 export { PrimaryInput } from './PrimaryInput';
 export { MailboxConectionButton } from './MailboxConectionButton';
+export { SettingsInput } from './SettingsInput';
