@@ -28,7 +28,7 @@ export const NewPassword: React.FC = () => {
         },
         validationSchema: newPasswordFormSchema,
         onSubmit: (formValues: NewPasswordFormValues) => {
-            navigate(routes.passwordReset)
+            navigate(routes.passwordReset);
         },
     });
 

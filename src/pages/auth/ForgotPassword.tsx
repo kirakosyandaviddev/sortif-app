@@ -10,7 +10,7 @@ import { routes } from "../../consts";
 
 interface ForgotPasswordFormValues {
     email: string;
-};
+}
 
 export const ForgotPassword: React.FC = () => {
     const navigate = useNavigate();

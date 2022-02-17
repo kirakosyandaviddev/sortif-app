@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import { NavLink } from "react-router-dom";
+
 import { SortifWhiteLogoCard, IconLink, IconButton, AvatarIcon } from ".";
 import { routes } from "../consts";
 import { CloseWhiteIcon, MenuWhiteIcon, SettingsIcon } from "../environment";
@@ -19,16 +19,16 @@ export const AppHeader: React.FC = () => {
                         <NavLink to="">
                             Dashboard
                         </NavLink>
-                        <NavLink to={routes.invoice}>
+                        <NavLink to={routes.invoices}>
                             Invoices
                         </NavLink>
-                        <NavLink to="">
+                        <NavLink to={routes.contacts}>
                             Contacts
                         </NavLink>
                     </div>
                 </div>
                 <div className="hidden md:flex gap-4">
-                    <IconLink to={routes.root} className="w-10 h-10">
+                    <IconLink to={routes.settings} className="w-10 h-10">
                         <SettingsIcon />
                     </IconLink>
                     <IconLink to={routes.home}>
@@ -57,22 +57,22 @@ export const AppHeader: React.FC = () => {
                 </IconButton>
             </div>
 
-            {/* for Mobile */}
             {
+                // for Mobile
                 showMenu &&
                 <div className="block md:hidden fixed top-16 w-full h-screen bg-white z-20 left-0">
                     <div className="flex flex-col items-center gap-8 text-gray900 font-inter-med text-size_size_18 p-8">
                         <NavLink to="">
                             Dashboard
                         </NavLink>
-                        <NavLink to={routes.invoice}>
+                        <NavLink to={routes.invoices}>
                             Invoices
                         </NavLink>
-                        <NavLink to="">
+                        <NavLink to={routes.contacts}>
                             Contacts
                         </NavLink>
                         <div className="flex gap-4">
-                            <IconLink to={routes.root} className="w-10 h-10">
+                            <IconLink to={routes.settings} className="w-10 h-10">
                                 <SettingsIcon />
                             </IconLink>
                             <IconLink to={routes.home}>

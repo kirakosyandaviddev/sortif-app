@@ -11,3 +11,7 @@ export { ChartDatePickerCard } from './ChartDatePickerCard';
 export { LatestContactsBar } from './LatestContactsBar';
 export { InvoiceFilterBar } from './InvoiceFilterBar';
 export { InvoiceTable } from './InvoiceTable';
+export { CompaniesTable } from './CompaniesTable';
+export { CompanyFilterBar } from './CompanyFilterBar';
+export { AccountSettingsForm } from './AccountSettingsForm';
+export { IMAPSettingsForm } from './IMAPSettingsForm';

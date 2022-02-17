@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import { IconLink, PrimaryButton, PrimaryInput, SortifLogoCard } from ".";
 
 export const MainFooter: React.FC = () => {
@@ -35,7 +35,7 @@ export const MainFooter: React.FC = () => {
                                 placeholder="Enter your email"
                                 onBlur={() => { }}
                                 onChange={() => { }}
-                                inputClassName="w-full lg:w-56"
+                                inputClassName="w-full lg:w-56 focus:bg-gray100 transition-colors"
                             />
                             <div>
                                 <PrimaryButton

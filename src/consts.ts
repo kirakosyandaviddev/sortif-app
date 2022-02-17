@@ -11,5 +11,7 @@ export const routes = {
     mailBoxConection: '/mailbox-conection',
 
     home: '/home',
-    invoice: '/invoice',
+    invoices: '/invoices',
+    contacts: '/contacts',
+    settings: '/settings',
 }

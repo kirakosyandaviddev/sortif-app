@@ -31,7 +31,7 @@ export const SignUp: React.FC = () => {
         },
         validationSchema: signUpFormSchema,
         onSubmit: (formValues: SignUpformValues) => {
-            navigate(routes.emailVerification(formValues.email))
+            navigate(routes.emailVerification(formValues.email));
         },
     });
 

@@ -40,7 +40,7 @@ export const MailBoxConnection: React.FC = () => {
     const changeSliderValue = () => {
         setMinDistance(minDistance + 1)
         setValue([0, minDistance])
-    }
+    };
 
     useEffect(() => {
         if (minDistance < 101) {
@@ -49,7 +49,7 @@ export const MailBoxConnection: React.FC = () => {
             }, 50)
         }
         // eslint-disable-next-line
-    }, [minDistance])
+    }, [minDistance]);
 
     const mailBoxConnectionFormSchema = yup.object().shape({
         email: yup.string().email('Email is not valid').required('Email is required'),

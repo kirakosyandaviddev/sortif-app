@@ -1,4 +1,5 @@
 import React from "react";
+
 interface AvatarIconProps {
     src: string;
     className?: string;
@@ -10,5 +11,11 @@ export const AvatarIcon: React.FC<AvatarIconProps> = ({
     className,
     size,
 }) => (
-    <img src={src} alt="Avatar" width={size} height={size} className={className} />
+    <img
+        src={src}
+        alt="Avatar"
+        width={size}
+        height={size}
+        className={className}
+    />
 );

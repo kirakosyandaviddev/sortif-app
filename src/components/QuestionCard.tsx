@@ -11,7 +11,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     title,
     description,
 }) => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    
     return (
         <div className="flex justify-between w-full pb-8 pt-6 border-b">
             <div className="flex flex-col transition-all w-full">
