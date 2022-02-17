@@ -44,7 +44,7 @@ export const IMAPSettingsForm: React.FC = () => {
                 error={touched.domain ? errors.domain : undefined}
             />
             <SettingsInput
-                name="IMAPPort"
+                name="imapPortFirst"
                 value={values.imapPortFirst}
                 type="text"
                 label="IMAP Port"
@@ -53,7 +53,7 @@ export const IMAPSettingsForm: React.FC = () => {
                 error={touched.imapPortFirst ? errors.imapPortFirst : undefined}
             />
             <SettingsInput
-                name="IMAPPort"
+                name="imapPortSecond"
                 type="text"
                 value={values.imapPortSecond}
                 label="IMAP Port"
@@ -62,7 +62,7 @@ export const IMAPSettingsForm: React.FC = () => {
                 error={touched.imapPortSecond ? errors.imapPortSecond : undefined}
             />
             <SettingsInput
-                name="IMAPPort"
+                name="imapPortThird"
                 type="text"
                 value={values.imapPortThird}
                 label="IMAP Port"
@@ -71,7 +71,7 @@ export const IMAPSettingsForm: React.FC = () => {
                 error={touched.imapPortThird ? errors.imapPortThird : undefined}
             />
             <SettingsInput
-                name="IMAPPort"
+                name="imapPortFourth"
                 type="text"
                 value={values.imapPortFourth}
                 label="IMAP Port"
@@ -80,7 +80,7 @@ export const IMAPSettingsForm: React.FC = () => {
                 error={touched.imapPortFourth ? errors.imapPortFourth : undefined}
             />
             <SettingsInput
-                name="IMAPPort"
+                name="imapPortFifth"
                 type="text"
                 value={values.imapPortFifth}
                 label="IMAP Port"
