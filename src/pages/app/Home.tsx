@@ -7,7 +7,7 @@ import { chartData, latestContacts } from "../../constMocks";
 export const Home: React.FC = () => {
     const [chartDate, setChartDate] = useState<"12m" | "30d" | "7d">("30d");
     const [viewAll, setViewAll] = useState(false);
-    
+
     return (
         <AppLayout>
             <div className="flex flex-col max-w-7xl w-full mt-16 py-10 md:py-24 px-5">
@@ -19,9 +19,8 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="flex flex-col md:flex-row gap-2 justify-between w-full pb-5 border-b border-gray200 mb-6">
                     <span className="text-size_18 font-inter-med text-gray900">Statistic</span>
-                    <div className="w-72 pr-5">
-                    <ChartDatePickerCard chartDate={chartDate} onChange={setChartDate} />
-
+                    <div className="w-72 md:w-auto">
+                        <ChartDatePickerCard chartDate={chartDate} onChange={setChartDate} />
                     </div>
                 </div>
                 <div className="mb-8">
